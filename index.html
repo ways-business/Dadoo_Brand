@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamagah-Logo-prsentation</title>
+    
+    <style>
+        /* A helpful reset to make layouts more predictable */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set the background color for the whole page */
+        body {
+            background-color: #e7e2df; /* Pure white */
+            font-family: sans-serif; /* A nice default font */
+        }
+
+        /* This is the main container for all your items */
+        .gallery-container {
+            /* Desktop styles (default) */
+            width: 70%; /* Takes up 70% of the screen width */
+            margin-top: 100px; /* 200px space from the top */
+            margin-bottom: 100px;
+            margin-left: auto;  /* These two 'auto' margins are what center the container */
+            margin-right: auto;
+            border: 2 solid #e7e2df; 
+        }
+
+        /* Style every image and video inside the container */
+        .gallery-container img,
+        .gallery-container video {
+            display: block; /* Ensures they stack vertically without weird spacing */
+            width: 100%;    /* This is the key: makes every item fill the container's width */
+            height: auto;   /* This is also key: lets the height adjust automatically */
+            margin-bottom: 0px; /* Adds some space between each item */
+        }
+
+        /* --- This is the magic for mobile and tablets --- */
+        /* Media Query: These styles will ONLY apply on screens 768px wide or smaller */
+        @media (max-width: 768px) {
+            .gallery-container {
+                width: 100%; /* On smaller screens, the container is full-width */
+                margin-top: 0; /* On smaller screens, the top margin is removed */
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- This is where all your images and videos will go -->
+    <div class="gallery-container">
+
+        <!-- Your Files - Make sure the src="" matches your filenames exactly! -->
+
+       <video src="1.mp4" autoplay loop muted playsinline></video>
+        
+        <img src="2.png" alt="Description of image 2">
+
+        <video src="3.mp4" autoplay loop muted playsinline></video>
+
+        <img src="4.png" alt="Description of image 4">
+
+    </div>
+
+</body>
+</html>
+
